@@ -1,0 +1,20 @@
+local wiki = script.system.wik
+local join = wiki.onload()
+local login = wiki.userdata.loginenabled
+local TOP_SECRETS = wiki.topsecretspages.firewallenabled
+local UserName = wiki.userdata.username
+local UserGmal = wiki.userdata.logingmail
+
+if not join then
+wiki.repert()
+end
+
+if not login then
+print("User can't enter in wiki, because it don't login in wiki first")
+end
+
+TOP_SECRETS = false
+
+if UserName == "G.R.G" or UserGmal == UserGame.name .. "G.R.G Security" then
+wiki.blockuser(UserName, "What do you try to enter this wiki? I'M -0, you can't enter here, GET OUT")
+end
